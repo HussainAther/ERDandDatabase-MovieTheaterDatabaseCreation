@@ -1,0 +1,27 @@
+"dbms","table_catalog","table_schema","table_name","column_name","ordinal_position","data_type","character_maximum_length","constraint_type","table_schema-2","table_name-2","column_name-2"
+"postgresql","movietheatre","public","customers","customer_id",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","movietheatre","public","movies","movie_id",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","movietheatre","public","tickets","ticket_id",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","movietheatre","public","tickets","customer_id",2,"integer",NULL,"FOREIGN KEY","public","customers","customer_id"
+"postgresql","movietheatre","public","tickets","movie_id",3,"integer",NULL,"FOREIGN KEY","public","movies","movie_id"
+"postgresql","movietheatre","public","concessions","concession_id",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","movietheatre","public","ticket_concessions","ticket_id",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","movietheatre","public","ticket_concessions","concession_id",2,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","movietheatre","public","ticket_concessions","ticket_id",1,"integer",NULL,"FOREIGN KEY","public","tickets","ticket_id"
+"postgresql","movietheatre","public","ticket_concessions","concession_id",2,"integer",NULL,"FOREIGN KEY","public","concessions","concession_id"
+"postgresql","movietheatre","public","concessions","price",4,"numeric",NULL,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","movies","director",6,"character varying",100,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","tickets","price",6,"numeric",NULL,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","tickets","ticket_date",4,"timestamp without time zone",NULL,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","customers","email",4,"character varying",100,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","concessions","description",3,"text",NULL,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","movies","duration_minutes",5,"integer",NULL,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","customers","first_name",2,"character varying",50,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","concessions","name",2,"character varying",100,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","tickets","seat_number",5,"character varying",10,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","movies","title",2,"character varying",100,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","customers","last_name",3,"character varying",50,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","ticket_concessions","quantity",3,"integer",NULL,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","customers","phone_number",5,"character varying",20,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","movies","genre",4,"character varying",50,NULL,NULL,NULL,NULL
+"postgresql","movietheatre","public","movies","release_date",3,"date",NULL,NULL,NULL,NULL,NULL
