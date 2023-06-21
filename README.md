@@ -16,4 +16,10 @@ The ticket_concessions table represents the concessions purchased along with eac
 
 ## How I did it
 
-In this assignment, I began with a SQL file to create the tables. Then, I used pg Admin to create the database and ran a line of code (at the bottom of the sql file) to convert the SQL database to a csv that could be uploaded to Lucidchart. This let me create the ERD in Lucidchart by starting with SQL code.  
+In this assignment, I began with a SQL file to create the tables. Then, I used pg Admin to create the database and ran a line of code (at the bottom of the sql file) to convert the SQL database to a csv that could be uploaded to Lucidchart. This let me create the ERD in Lucidchart by starting with SQL code. 
+
+There's another file `somecoolstuff.sql` that lets you do some cool stuff with the data. 
+
+In the file `adddata.sql` we add data into it.
+
+Also some SQLAlchemy stuff in `database_setup.py`.  
